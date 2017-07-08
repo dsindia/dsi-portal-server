@@ -1,0 +1,26 @@
+{
+  "name": "DSI",
+  "main": "app.js",
+  "version": "6.9.1",
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "mongo": "mongod --storageEngine=mmapv1 --dbpath f:/data",
+    "repmongo": "mongod --dbpath f:/data --repair"
+  },
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "bower": "1.8.0",
+    "compression": "^1.6.2",
+    "connect-multiparty": "^2.0.0",
+    "dotenv": "^4.0.0",
+    "express": "~4.5.1",
+    "method-override": "~2.0.2",
+    "mongoose": "~3.8.0",
+    "request": "^2.81.0",
+    "xoauth2": "^1.2.0"
+  }
+}

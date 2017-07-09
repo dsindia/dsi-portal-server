@@ -37,12 +37,17 @@
   3. All **routes** must be named like {resource}Routes.js (Eg:- userRoutes.js)
   4. Api patterns -
       * There can be 5 routes for each resource - 
-            - **GET** /{resource}                (Eg:- **GET** /posts)
-            - **GET**/{resource}/:id            (Eg:- **GET** /posts/:id)
-            - **POST** /{resource}              (Eg:- **POST** /posts)
-            - **PUT** /{resource}/:id           (Eg:- **PUT** /posts/:id)
+            - **GET** /{resource}             (Eg:- **GET** /posts)
+            
+            - **GET**/{resource}/:id          (Eg:- **GET** /posts/:id)
+            
+            - **POST** /{resource}            (Eg:- **POST** /posts)
+            
+            - **PUT** /{resource}/:id         (Eg:- **PUT** /posts/:id)
+            
             - **DELETE** /{resource}/:id      (Eg:- **DELETE** /posts/:id)
-            Note that the here we have to use the plural.
+            
+            Note that the here we have to use the **plural**.
 
 ## Collections 
   1. *Users*

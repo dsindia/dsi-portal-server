@@ -37,6 +37,7 @@
   3. All **routes** must be named like {resource}Routes.js (Eg:- userRoutes.js)
   4. Api patterns -
       * There can be 5 routes for each resource - 
+      
             - **GET** /{resource}             (Eg:- **GET** /posts)
             
             - **GET**/{resource}/:id          (Eg:- **GET** /posts/:id)

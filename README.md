@@ -13,6 +13,7 @@
  3. Example -
         `
                  DB_URL='mongodb://localhost/dbname'
+                 
                  HOST_URL='backend_url'
         `
  4.   HOST_URL is useful when referencing site url in mails or anywhere in backend
@@ -40,7 +41,7 @@
       
             - GET /{resource}             (Eg:- GET /posts)
             
-            - GET/{resource}/:id          (Eg:- GET /posts/:id)
+            - GET /{resource}/:id          (Eg:- GET /posts/:id)
             
             - POST /{resource}            (Eg:- POST /posts)
             
@@ -48,7 +49,7 @@
             
             - DELETE /{resource}/:id      (Eg:- DELETE /posts/:id)
             
-            Note that the here we have to use the plural.
+          Note that here we have to use the plural.
 
 ## Collections 
   1. *Users*

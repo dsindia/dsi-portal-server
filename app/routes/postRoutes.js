@@ -13,6 +13,7 @@ var PostsSchema = {
     },
     create: {
         description: Joi.types.String().required(),
+        tags: Joi.types.Array().required()
     },
     update: {
         id: Joi.types.String().required(),

@@ -3,14 +3,14 @@ const Schema = mongoose.Schema;
 module.exports = mongoose.model('Post', {
     userId: {
         type: Schema.ObjectId,
-        ref: "Users"
+        ref: "User"
     },
     description: {
         type: String
     },
     tags: [{
         type: Schema.ObjectId,
-        ref: "Tags"
+        ref: "Tag"
     }],
     likes: {
         count: {
@@ -19,7 +19,7 @@ module.exports = mongoose.model('Post', {
         },
         data: [{
             type: Schema.ObjectId,
-            ref: "Users"
+            ref: "User"
         }]
     },
     comments: {
@@ -29,7 +29,7 @@ module.exports = mongoose.model('Post', {
         },
         data: [{
             type: Schema.ObjectId,
-            ref: 'Comments'
+            ref: 'Comment'
         }]
     }
 });

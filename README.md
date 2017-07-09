@@ -24,11 +24,10 @@
   1. In the root directory there is app.js, config.js.
   2. **app.js** is for starting the server.
   3. **config.js** is for configuration of mongodb according to node env(dev or prod).
-  4. The **/app** folder contains **/controllers, /models, /routes, /services, /utils**.
+  4. The **/app** folder contains **/controllers, /models, /routes, /utils**.
   5. **route** files will map Api routes to controllers and validate recieved data.
   6. **controller** files have the main app logic.
-  7. **service** files are used when certain task have to be performed which involves more than one resource (Eg:- linking comments and posts with each other)
-  8. **utility** files will have simple functions which can be used in other places to avoid repetition. 
+  7. **utility** files will have simple functions which can be used in other places to avoid repetition. 
 
 ## Api explaination
   1. All the Api's are prefixed with /api/v1.
@@ -43,7 +42,7 @@
       
             - GET /{resource}             (Eg:- GET /posts)
             
-            - GET /{resource}/:id          (Eg:- GET /posts/:id)
+            - GET /{resource}/:id         (Eg:- GET /posts/:id)
             
             - POST /{resource}            (Eg:- POST /posts)
             
@@ -55,7 +54,7 @@
 
 ## Collections 
   1. *Users*
-  2. *Posts* 
-  3. *Comments* 
-  4. *Tags* 
-  5. *Courses*  
+  2. *Posts*
+  3. *Comments*
+  4. *Tags*
+  5. *Courses*

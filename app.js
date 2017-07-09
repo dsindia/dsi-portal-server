@@ -24,6 +24,7 @@ app.use(function (req, res, next) {
     next();
 });
 require('./app/routes/postRoutes')(app);
+require('./app/routes/tagRoutes')(app);
 app.get('*', function (req, res) {
     res.sendfile('./public/index.html');
 })

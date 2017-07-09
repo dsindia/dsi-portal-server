@@ -11,10 +11,12 @@
  1. The .env file is very important.
  2. Edit its fields with the ones you use.
  3. Example -
+        
         `
                  DB_URL='mongodb://localhost/dbname'
                  
                  HOST_URL='backend_url'
+                 
         `
  4.   HOST_URL is useful when referencing site url in mails or anywhere in backend
 

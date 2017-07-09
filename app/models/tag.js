@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-module.exports = mongoose.model('Tag', {
+var tagSchema = new Schema({
     name: {
         type: String
     },
@@ -9,3 +9,4 @@ module.exports = mongoose.model('Tag', {
         ref: "Post"
     }]
 });
+module.exports = mongoose.model('Tag', tagSchema);

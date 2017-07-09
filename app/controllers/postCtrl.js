@@ -2,8 +2,8 @@ var Post = require('./../models/post');
 var Tag = require('./../models/tag');
 module.exports = {
     getList: function (req, res) {
-        var limit = req.items.limit;
-        var offset = req.items.offset;
+        var limit = parseInt(req.items.limit);
+        var offset = parseInt(req.items.offset);
         var fields = req.items.fields;
         Post.find().limit(limit).skip(offset).select(fields).exec(function (err, posts) {
             if (err) res.send(err);

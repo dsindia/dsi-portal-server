@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-module.exports = mongoose.model('Post', {
+var postSchema = new Schema({
     userId: {
         type: Schema.ObjectId,
         ref: "User"
@@ -32,4 +32,7 @@ module.exports = mongoose.model('Post', {
             ref: 'Comment'
         }]
     }
+}, {
+    timestamps: true
 });
+module.exports = mongoose.model('Post', postSchema);
